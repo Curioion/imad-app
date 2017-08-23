@@ -14,7 +14,11 @@ var articleOne  = {
            <p >  This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my firThis is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.</p>`
      
 };
-
+var createTemplate = function (data){
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
 var htmlTemplate = `
         <html>
     <head>
@@ -36,12 +40,9 @@ var htmlTemplate = `
            </div>
        </div>
     </body>
-    
-</html>
-
-
-
-`;
+</html>`;
+ return htmlTemplate;
+};
 
 
 app.use(morgan('combined'));
@@ -51,7 +52,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
