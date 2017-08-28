@@ -10,5 +10,5 @@ element.innerHTML = "Changed and New";
 var img = document.getElementById('leaf');
 element.onclick = function()
 {
-    img.style.marginLeft = '300px';
+    img.style.marginLeft = '100px';
 }; 
