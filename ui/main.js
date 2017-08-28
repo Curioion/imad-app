@@ -2,4 +2,4 @@ console.log('Loaded!');
 
 var element = document.getElementById('james');
 
-element = "Changed and New";
+element.innerHTML = "Changed and New";
