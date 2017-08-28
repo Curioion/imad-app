@@ -8,8 +8,14 @@ element.innerHTML = "Changed and New";
 //move the image..
 
 var img = document.getElementById('leaf');
+var marginLeft = 0;
+var moveRight = function()
+{
+    marginLeft = 10;
+    img.style.marginLeft = marginLeft+'px';
+};
 
 img.onclick = function()
 {
-    img.style.marginLeft = '100px';
+    var interval = setInterval(moveRight,100);
 }; 
