@@ -8,7 +8,8 @@ element.innerHTML = "Changed and New";
 //move the image..
 
 var img = document.getElementById('leaf');
-element.onclick = function()
+
+img.onclick = function()
 {
     img.style.marginLeft = '100px';
 }; 
