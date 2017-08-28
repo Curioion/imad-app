@@ -4,11 +4,11 @@ var button = document.getElementById('counter');
 button.onclick = function () {
     
     //Create request Object
-    var request = new XMLHTTPRequest();
+    var request = new XMLHttpRequest();
     
     //capture the request
     request.onreadystatechange = function(){
-        if(request.readystate === XMLHTTPRequest.DONE)
+        if(request.readystate === XMLHttpRequest.DONE)
         {
             if(request.status === 200 )
             {
