@@ -1,7 +1,7 @@
 // Counter Button Code
-var counter = 0;
 var button = document.getElementByID('plant');
-button.onclick = function(){
+var counter = 0;
+button.onclick = function () {
     
     //make a request
     
