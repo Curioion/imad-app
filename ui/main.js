@@ -9,11 +9,11 @@ element.innerHTML = "Changed and New";
 
 var img = document.getElementById('leaf');
 var marginLeft = 0;
-var moveRight = function()
+function moveRight ()
 {
     marginLeft = 10;
     img.style.marginLeft = marginLeft+'px';
-};
+}
 
 img.onclick = function()
 {
