@@ -21,4 +21,23 @@ button.onclick = function () {
     //Make a request
     request.open('GET','http://nvdt13513.imad.hasura-app.io/counter', true);
     request.send(null);
+    
 };
+//submit input code
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value;
+    var submit = document.getElementById('submit_btn');
+    submit.onclick = function(){
+        //Make a request ot the server and send the name
+        
+        //Capture the list of names and render it as a list.
+        var names = ['Name1','Name2','Name3','Name4','Name5'];
+        var list = '';
+        for(var i = 0; i<names.length; i++)
+        {
+            list += '<li>' + names[i] + '</li>';
+        }
+        var ul =document.getElementById('nameList');
+        ul.innerHTML = list;
+    };
+    
