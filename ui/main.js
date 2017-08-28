@@ -11,11 +11,11 @@ var img = document.getElementById('leaf');
 var marginLeft = 0;
 function moveRight ()
 {
-    marginLeft = marginLeft + 30;
+    marginLeft = marginLeft + 300;
     img.style.marginLeft = marginLeft+'px';
 }
 
 img.onclick = function()
 {
-    var interval = setInterval(moveRight,0.5);
+    var interval = setInterval(moveRight,20);
 }; 
