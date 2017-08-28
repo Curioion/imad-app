@@ -1,21 +1,15 @@
-console.log('Loaded!');
-
-// Change the text
-var element = document.getElementById('james');
-
-element.innerHTML = "Changed and New";
-
-//move the image..
-
-var img = document.getElementById('leaf');
-var marginLeft = 0;
-function moveRight ()
-{
-    marginLeft = marginLeft + 300;
-    img.style.marginLeft = marginLeft+'px';
-}
-
-img.onclick = function()
-{
-    var interval = setInterval(moveRight,1000);
-}; 
+// Counter Button Code
+var counter = 0;
+var button = document.getElementByID('plant');
+button.onclick = function(){
+    
+    //make a request
+    
+    
+    //capture the request
+    
+    //render the correct span
+  counter = counter  + 1;
+  var span = document.getElementById('count');
+  span.innerHTML = counter.toString();
+};
