@@ -74,7 +74,7 @@ app.get('/counter', function (req, res){
 
 
 var names = [];
-app.get('/submit-name',function (req, res){// /submit-name?name=xxxx
+app.get('/submit-name',function (req, res){// URL: /submit-name?name=xxxxx
     //get the name from the request 
     var name = req.params.name;//Todo
     
