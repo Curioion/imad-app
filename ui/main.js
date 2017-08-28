@@ -1,5 +1,5 @@
 // Counter Button Code
-var button = document.getElementByID('plant');
+var button = document.getElementByID('counter');
 var counter = 0;
 button.onclick = function () {
     
