@@ -95,7 +95,7 @@ app.get('/ui/madi.png', function (req, res) {
 var names = [];
 app.get('/submit-name/:name',function (req, res){
     //get the name from the request 
-    var name = req.params.names;//Todo
+    var name = req.params.name;//Todo
     
     names.push(name);
     //using JSON now
