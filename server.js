@@ -1,7 +1,16 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool = require('pg').Pool;
 
+
+var config = {
+   user: 'nvdt13513',
+  host: 'db.imad.hasura.io',
+  database: 'nvdt13513',
+  password: process.env.DB_PASSWORD,
+  port: 5432
+};
 var app = express();
 
 var articles = {
@@ -65,9 +74,10 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+const pool = new Pool(config);
 app.get('/test-db',function(req,res){
     
-})
+});
 var counter = 0;
 app.get('/counter', function (req, res){
     counter = counter + 1 ;
